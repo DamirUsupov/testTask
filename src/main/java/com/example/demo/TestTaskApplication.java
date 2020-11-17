@@ -14,11 +14,6 @@ public class TestTaskApplication {
     @Autowired
     public TestTaskApplication(UserService service) {
         this.service = service;
-
-        service.save(new User("Вася",
-                "Васькин",
-                (byte) 22,
-                "муж"));
     }
 
     public static void main(String[] args) {
